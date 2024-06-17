@@ -2,7 +2,7 @@
 
 upload_file_to_bucket() {
     response=$(aws s3 cp "$1" s3://"$BUCKET_NAME")
-    echo $error_message
+    echo $response
     if [[ $? -ne 0 ]]; then
       echo "Error while uploading file(s)"
       echo "Error: $response"
