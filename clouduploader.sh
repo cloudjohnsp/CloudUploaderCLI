@@ -13,7 +13,7 @@ upload_file_to_bucket() {
 
 for file_path in "$@"; do
   if [[ ! -f "$file_path" ]]; then
-    echo "File: "$file_path" does not exist or it's a directory."
+    echo "File: "$file_path" does not exist or is a directory."
   else
     upload_file_to_bucket "$file_path"
   fi
