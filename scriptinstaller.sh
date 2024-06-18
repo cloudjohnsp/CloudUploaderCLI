@@ -1,4 +1,5 @@
 #!/bin/bash
+
 BIN_DIR="/usr/local/bin"
 UPLOADER_SCRIPT="clouduploader.sh"
 

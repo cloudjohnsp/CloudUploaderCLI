@@ -7,6 +7,7 @@ generate_shareable_link() {
 upload_file_to_bucket() {
     local object_name="$1"
     response=$(aws s3 cp $object_name s3://"$BUCKET_NAME")
+
     if [[ $? -ne 0 ]]; then
       echo "Error while uploading file(s)"
       echo "Error: $response"
