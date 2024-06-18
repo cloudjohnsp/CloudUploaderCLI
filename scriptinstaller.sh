@@ -12,7 +12,7 @@ cp $UPLOADER_SCRIPT $BIN_DIR
 chmod +x $BIN_DIR/$UPLOADER_SCRIPT
 
 if [[ ":$PATH:" == *":$BIN_DIR:"* ]]; then
-	echo "Installation sucessful. Now you can call '$UPLOADER_SCRIPT' from CLI."
+	echo "Installation sucessful. You can now call '$UPLOADER_SCRIPT' from anywhere."
 else 
 	echo "Installation successful, but '$BIN_DIR' is not in PATH."
 fi
