@@ -33,7 +33,7 @@ export BUCKET_NAME='<your-bucket-name>'
 
 5. Verify that you can call the cloud uploader script by using the command: `clouduploader.sh`. It should return the message: "File: does not exist or is a directory.", since you did not provided any file or path as an argument.
 
-## Usage ⬆️ 🎆
+## How to use ⬆️ 🪣 ☁️ 🎆
 
 ### Single file:
 
@@ -44,8 +44,15 @@ clouduploader.sh file1.mp3
 ### Multiple files:
 
 ```
-clouduploader.sh ~/songs/mp3/file1.mp3 file2.tar file3.txt
+clouduploader.sh ~/songs/mp3/file1.mp3 ./file2.tar ~/moviesDir
+```
+
+### Directories
+
+```
+clouduploader.sh ~/moviesDir
 ```
 
 - **If uploading the object(s) to the S3 bucket is successful, the CLI will ask if you want to generate a shareable link to see what is inside the object uploaded to the bucket. Proceed with Y to generate the link**.
-- **You can upload as many files with any extension as you like, but each file cannot exceed 160 GB**.
+- **Shareable links only works with files**
+- **You can upload as many files with any extension as you like, but each CLI argument cannot exceed 160 GB**.
